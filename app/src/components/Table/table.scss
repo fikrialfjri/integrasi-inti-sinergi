@@ -1,0 +1,80 @@
+@import "../../assets/scss/colors";
+
+// table {
+//   width: 99.9%;
+//   border-collapse: inherit;
+//   text-align: left;
+//   overflow: hidden;
+
+//   tbody {
+//     tr {
+//       border: 1px solid $polyp-7;
+//       border-radius: 12px;
+//       padding: 28px;
+
+//       td {
+//         padding: 28px 0;
+//       }
+
+//       td:first-child {
+//         border-left: 1px solid #dfe1e6;
+//       }
+//     }
+//     // tr {
+//     //   td {
+//     //     // border: 1px solid #000000;
+//     //     padding: 20px;
+//     //     background: red;
+//     //     color: #ffffff;
+//     //   }
+
+//     //   td:first-child {
+//     //     border-left: 1px solid #000000;
+//     //   }
+//     // }
+
+//     tr:first-child td:first-child {
+//       // border: 1px solid #000;
+//       border-radius: 20px 0 0 0;
+//     }
+//   }
+// }
+
+.responsive-table {
+  li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .table-header {
+    margin: 24px 0;
+    padding: 0 12px;
+  }
+
+  .table-row {
+    border: 1px solid #dfe1e6;
+    border-radius: 12px;
+    padding: 28px 12px;
+    margin-bottom: 20px;
+  }
+
+  .col-1 {
+    flex-basis: 5%;
+  }
+
+  .col-2 {
+    flex-basis: 20%;
+  }
+
+  .col-3 {
+    flex-basis: 20%;
+  }
+
+  .col-4 {
+    flex-basis: 20%;
+  }
+
+  .col-5 {
+    flex-basis: 20%;
+  }
+}

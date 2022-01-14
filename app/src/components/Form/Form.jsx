@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { create } from "../../store/actions";
+import { createData } from "../../store/actions";
 import "./form.scss";
 
 export default function Form() {
@@ -20,7 +20,11 @@ export default function Form() {
     };
 
     try {
-      await dispatch(create(payload));
+      await dispatch(createData(payload));
+
+      setName("");
+      setCategory("");
+      setAvailability("");
     } catch (error) {
       console.log(error);
     }
@@ -72,16 +76,16 @@ export default function Form() {
               type="radio"
               id="available"
               name="availability"
-              value="Available"
-              onChange={(e) => setAvailability(e.target.value)}
+              value={availability}
+              onChange={(e) => setAvailability("Available")}
             />
             <label htmlFor="available">Available</label>
             <input
               type="radio"
               id="full"
               name="availability"
-              value="Full"
-              onChange={(e) => setAvailability(e.target.value)}
+              value={availability}
+              onChange={(e) => setAvailability("Full")}
             />
             <label htmlFor="full">Full</label>
           </div>

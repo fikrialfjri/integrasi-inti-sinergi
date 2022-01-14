@@ -1,3 +1,16 @@
-import { combineReducers } from "redux";
+import { FETCH_DATA } from "../keys";
 
-export const reducer = combineReducers({});
+const initialState = {
+  data: [],
+};
+
+export default function reducer(state = initialState, action) {
+  const { payload, type } = action;
+
+  switch (type) {
+    case FETCH_DATA:
+      return { ...state, data: payload };
+    default:
+      return state;
+  }
+}

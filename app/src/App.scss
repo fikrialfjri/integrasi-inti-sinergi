@@ -1,8 +1,24 @@
-$neutral-11: #242933;
+@import "./assets/scss/colors";
 
 .App {
   margin: 28px 24px;
   font-size: 1em;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: $neutral-11;
+}
+
+h4 {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: $neutral-11;
+}
+
+.card-row {
+  margin-top: 36px;
 }
 
 .card-row:after {

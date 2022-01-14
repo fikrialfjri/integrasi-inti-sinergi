@@ -1,9 +1,21 @@
 $neutral-11: #242933;
 
 .App {
-  color: $neutral-11;
-  text-align: center;
-  line-height: 100vh;
-  font-size: 3em;
-  font-weight: bold;
+  margin: 28px 24px;
+  font-size: 1em;
+}
+
+.card-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-col-30 {
+  float: left;
+  width: 30%;
+}
+.card-col-40 {
+  float: left;
+  width: 40%;
 }

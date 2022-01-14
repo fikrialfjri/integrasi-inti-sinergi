@@ -8,15 +8,15 @@ export default function Table() {
 
   return (
     <div>
-      <ul class="responsive-table">
-        <li class="table-header">
-          <div class="col-1">
+      <ul className="responsive-table">
+        <li className="table-header">
+          <div className="col-1">
             <input type="checkbox" name="select-all" id="select" />
           </div>
-          <div class="col-2">Name</div>
-          <div class="col-3">Category</div>
-          <div class="col-4">Availability</div>
-          <div class="col-5">Arrival</div>
+          <div className="col-2">Name</div>
+          <div className="col-3">Category</div>
+          <div className="col-4">Availability</div>
+          <div className="col-5">Arrival</div>
         </li>
         {data.length === 0 ? (
           <div>Tidak ada data</div>
@@ -24,7 +24,7 @@ export default function Table() {
           data.map((data) => {
             return (
               <>
-                <li class="table-row">
+                <li className="table-row">
                   <TableRow key={data._id} data={data} />
                 </li>
               </>

@@ -39,3 +39,35 @@ export function createData(payload) {
     }
   };
 }
+
+export function updateData(id) {
+  return async function (dispatch) {
+    try {
+      const updateData = await API({
+        method: "PUT",
+        url: `/${id}/mark-as-arrived`,
+      });
+
+      console.log(updateData);
+      dispatch(fetchData());
+    } catch (error) {
+      console.log(error.response.data);
+    }
+  };
+}
+
+export function deleteData(id) {
+  return async function (dispatch) {
+    try {
+      const deleteData = await API({
+        method: "DELETE",
+        url: `/${id}`,
+      });
+
+      console.log(deleteData);
+      dispatch(fetchData());
+    } catch (error) {
+      console.log(error.response.data);
+    }
+  };
+}

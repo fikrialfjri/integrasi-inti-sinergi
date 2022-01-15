@@ -1,25 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
 import { Bar } from "react-chartjs-2";
 import "./category.scss";
-
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
 
 export default function Category() {
   const data = useSelector((state) => state.data);

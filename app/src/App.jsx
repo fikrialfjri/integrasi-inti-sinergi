@@ -5,6 +5,26 @@ import { Category, Availability } from "./components/Chart";
 import { Table } from "./components/Table";
 import { fetchData } from "./store/actions";
 import { useDispatch } from "react-redux";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  ArcElement,
+  Tooltip,
+  Legend,
+} from "chart.js";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  ArcElement,
+  Tooltip,
+  Legend
+);
 
 function App() {
   const dispatch = useDispatch();

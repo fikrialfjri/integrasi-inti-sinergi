@@ -76,16 +76,16 @@ export default function Form() {
               type="radio"
               id="available"
               name="availability"
-              value={availability}
-              onChange={(e) => setAvailability("Available")}
+              value="Available"
+              onChange={(e) => setAvailability(e.target.value)}
             />
             <label htmlFor="available">Available</label>
             <input
               type="radio"
               id="full"
               name="availability"
-              value={availability}
-              onChange={(e) => setAvailability("Full")}
+              value="Full"
+              onChange={(e) => setAvailability(e.target.value)}
             />
             <label htmlFor="full">Full</label>
           </div>

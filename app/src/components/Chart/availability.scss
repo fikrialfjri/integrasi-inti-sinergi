@@ -1,0 +1,64 @@
+@import "../../assets/scss/colors";
+
+.availability {
+  border: 1px solid #dadbdd;
+  border-radius: 16px;
+  padding: 16px 12px;
+  height: 430px;
+
+  &-title {
+    padding: 0 12px;
+    margin-top: 8px;
+  }
+
+  &-chart {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .availability-available {
+      .availability-text {
+        .square-icon {
+          background-color: $polyp-p500;
+        }
+      }
+    }
+
+    .availability-full {
+      .availability-text {
+        .square-icon {
+          background-color: $zippy-7;
+        }
+      }
+    }
+  }
+}
+
+.availability-text {
+  display: flex;
+  justify-content: center;
+}
+
+.square-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 14px;
+}
+
+.availability-name {
+  margin: 2px 0 14px;
+  color: $neutral-7;
+}
+
+.total-availability {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: $neutral-9;
+}

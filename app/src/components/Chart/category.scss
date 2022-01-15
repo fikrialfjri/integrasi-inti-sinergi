@@ -1,0 +1,45 @@
+@import "../../assets/scss/colors";
+
+.category-container {
+  padding: 0 24px;
+}
+
+.category {
+  border: 1px solid #dadbdd;
+  border-radius: 16px;
+  padding: 16px 12px;
+  height: 430px;
+
+  &-title {
+    padding: 0 12px;
+    margin: 8px 0 16px 0;
+  }
+
+  &-info {
+    background-color: $grey;
+    padding: 8px 12px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+
+    .category-row {
+      display: flex;
+      justify-content: space-between;
+
+      .category-col {
+        padding: 4px 8px;
+
+        .category-name {
+          color: $neutral-7;
+          font-size: 0.8em;
+          margin-bottom: 10px;
+        }
+
+        .total-category {
+          font-size: 1.5em;
+          font-weight: 600;
+          color: $neutral-11;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.form-card {
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  padding: 16px 24px;
+  height: 430px;
+}
+
+.label {
+  padding: 4px 16px;
+  margin-bottom: 4px;
+}
+
+.input-name {
+  margin-bottom: 26px;
+
+  .input {
+    outline: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    border: 1px solid #cfd4dc;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .input:focus {
+    border: 2px solid #295757;
+  }
+}
+
+.input-category {
+  margin-bottom: 26px;
+
+  .select-dropdown {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: 0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    border: 1px solid #cfd4dc;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    appearance: none; /* Remove default arrow */
+    background-image: url("../../assets/Icon - Chevron.svg"); /* Add custom arrow */
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  .select-dropdown:focus {
+    border: 2px solid #295757;
+  }
+}
+
+.input-availability {
+  margin-bottom: 26px;
+
+  .radio-container {
+    margin-top: 18px;
+  }
+}
+
+.input-arrival {
+  margin-bottom: 26px;
+
+  .input {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+}
+
+.input-button {
+  border: none;
+  background-color: #295757;
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: white;
+  cursor: pointer;
+}
